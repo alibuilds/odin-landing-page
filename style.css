@@ -178,11 +178,42 @@ header {
 
 /* Testimonial Section */
 .testimonial {
-    background-color: #e5e7eb  /* Background for section */
+    background-color: #e5e7eb;  /* Light grey background */
+    padding: 40px 0;  /* Vertical padding for spacing */
+    display: flex;
+    justify-content: center;  /* Center the testimonial container */
+    align-items: center;
+    text-align: center;  /* Center the text */
+}
+
+/* Testimonial Container */
+.testimonial-container {
+    max-width: 800px;  /* Limit the width of the testimonial */
+    margin: 0 auto;  /* Center the container */
+    padding: 40px;  /* Add padding inside the container */
+    box-sizing: border-box;
+}
+
+/* Quote Styling */
+.testimonial-container .quote p {
+    font-size: 28px;  /* Font size for the quote */
+    font-weight: lighter;
+    font-style: italic;  /* Italic style for the quote */
+    color: #4b5563;  /* Dark grey text color */
+    text-align: left;
+}
+
+/* Thor's Name Styling */
+.testimonial-container .thor p {
+    font-size: 20px;  /* Slightly smaller font for the name */
+    font-weight: bold;  /* Bold font weight for the author name */
+    color: #1F2937;  /* Darker color for emphasis */
+    margin: 0;  /* Remove default margin */
+    text-align: right;
 }
 
 /* Call to Action Section */
-.testimonal {
+.cta {
     background-color: white  /* Background for section */
 }
 
