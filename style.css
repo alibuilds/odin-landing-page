@@ -1,0 +1,127 @@
+/* Importing Roboto Font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Roboto';
+  background-color: #1F2937; /* Dark background */
+  color: #F9FAF8; /* Light text */
+  height: 100vh;
+}
+
+/* Header Styling */
+header {
+    padding: 20px 50px; /* 20px top/bottom, 50px left/right */
+    display: flex;
+    justify-content: space-between; /* Distribute space between logo and links */
+    align-items: center;
+}
+
+.logo {
+  font-size: 24px;
+  color: #F9FAF8;
+  font-weight: 700; /* Bold logo */
+}
+
+.header-links {
+  list-style: none; /* Remove default list styling (e.g., bullets and indentation) */
+  margin: 0;
+  padding: 0;
+  display: flex; /* Display links inline (horizontally) rather than stacking vertically */
+}
+
+.header-links li {
+  margin-left: 20px; /* Spacing in between link items */
+}
+
+.header-links li a {
+  text-decoration: none; /* Remove underline */
+  font-size: 18px;
+  color: #E5E7EB;
+  font-weight: 400; /* Regular font weight */
+}
+
+/* Hero Section */
+.hero {
+    padding: 20px 50px; /* 20px top/bottom, 50px left/right */
+    display: flex;
+    justify-content: space-between; /* Space between content and image */
+    align-items: flex-start; /* Align content to the top */
+    min-height: 400px;  /* Adjust height of hero section */
+    margin: 40px 0;  /* Consistent vertical spacing */
+}
+
+.hero-content {
+  flex: 1;
+  max-width: 50%;  /* Ensure text takes up half of the width */
+  padding-right: 20px;  /* Space between text and image */
+}
+
+.hero h1 {
+  font-size: 48px;
+  color: #F9FAF8;
+  font-weight: 900; /* Extra bold heading */
+  margin: 0; /* Remove default margin */
+  padding-top: 0; /* Ensure no extra padding */
+}
+
+.hero p {
+  font-size: 18px;
+  color: #E5E7EB;
+  margin-bottom: 40px; /* Space below paragraph */
+}
+
+.hero button {
+  font-size: 18px;
+  background-color: #3882F6;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.hero button:hover {
+  background-color: #2f6ecf; /* Darker button on hover */
+}
+
+/* Image Placeholder */
+.image-placeholder {
+  flex: 1;
+  max-width: 50%; /* Take up half the width */
+  background-color: #6d747e; /* Grey background */
+  height: 300px;
+  display: flex;
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
+  text-align: center;
+  margin: 0; /* Ensure no extra margin */
+}
+
+.image-placeholder p {
+  margin: 0; /* Remove default margin */
+  font-size: 16px;
+}
+
+/* Information Section */
+.information {
+    background-color: white /* Background for section */
+}
+
+/* Testimonial Section */
+.testimonial {
+    background-color: #e5e7eb  /* Background for section */
+}
+
+/* Call to Action Section */
+.testimonal {
+    background-color: white  /* Background for section */
+}
+
+/* Footer Styling*/
+footer {
+    padding: 20px 50px;  /* 20px top/bottom, 50px left/right */
+    display: flex;
+    justify-content: center;  /* Center content horizontally */
+    align-items: center;  /* Center content vertically */
+}
