@@ -17,6 +17,17 @@ header {
     align-items: center;
 }
 
+.header-container {
+    max-width: 1200px;  /* Set a maximum width for the header container */
+    width: 100%;  /* Allow the header container to be responsive */
+    display: flex;  /* Flexbox to align logo and navigation side by side */
+    justify-content: space-between;  /* Space between the logo and navigation */
+    align-items: center;  /* Vertically align the logo and navigation */
+    padding: 0 20px;  /* Optional: Add padding on left and right */
+    box-sizing: border-box;  /* Include padding in the width calculation */
+    margin: 0 auto;  /* Center the header container horizontally */
+}
+
 .logo {
   font-size: 24px;
   color: #F9FAF8;
@@ -43,18 +54,25 @@ header {
 
 /* Hero Section */
 .hero {
-    padding: 20px 50px; /* 20px top/bottom, 50px left/right */
-    display: flex;
-    justify-content: space-between; /* Space between content and image */
-    align-items: flex-start; /* Align content to the top */
-    min-height: 400px;  /* Adjust height of hero section */
-    margin: 40px 0;  /* Consistent vertical spacing */
+    width: 100%; 
+    display: flex;  /* Flexbox to align items side by side */
+    justify-content: center;  /* Space between text and image placeholder */
+    align-items: center;  /* Vertically align items */
+    flex-wrap: wrap;  /* Allow wrapping on small screens */
 }
 
+.hero-container {
+    display: flex;  /* Flexbox to align items side by side */
+    justify-content: space-between;  /* Space between content and image */
+    align-items: flex-start;  /* Vertically align items */
+    padding: 40px 50px;  /* 20px top/bottom, 50px left/right */
+    box-sizing: border-box;
+  }
+
 .hero-content {
-  flex: 1;
-  max-width: 50%;  /* Ensure text takes up half of the width */
-  padding-right: 20px;  /* Space between text and image */
+    flex-basis: 50%;  /* Set the content to take up 50% of the container */
+    padding-right: 20px;  /* Space between text and image */
+    box-sizing: border-box;  /* Include padding in the width calculation */
 }
 
 .hero h1 {
@@ -87,15 +105,14 @@ header {
 
 /* Image Placeholder */
 .image-placeholder {
-  flex: 1;
-  max-width: 50%; /* Take up half the width */
-  background-color: #6d747e; /* Grey background */
-  height: 300px;
-  display: flex;
-  justify-content: center; /* Center content horizontally */
-  align-items: center; /* Center content vertically */
-  text-align: center;
-  margin: 0; /* Ensure no extra margin */
+    flex-basis: 50%;  /* Set the image to take up 50% of the container */
+    background-color: #6d747e;  /* Example background color */
+    height: 300px;  /* Set a fixed height for the placeholder */
+    display: flex;  /* Use flexbox to align the content inside */
+    justify-content: center;  /* Center content horizontally */
+    align-items: center;  /* Center content vertically */
+    text-align: center;
+    box-sizing: border-box;
 }
 
 .image-placeholder p {
@@ -105,8 +122,59 @@ header {
 
 /* Information Section */
 .information {
-    background-color: white /* Background for section */
+    width: 100%; 
+    background-color: white; /* Background for section */
+    min-height: 400px;  /* Adjust height of hero section */
+    text-align: center;  /* Center the text inside */
 }
+
+.information-container {
+    max-width: 960px;  /* Limit content width */
+    margin: 0 auto;  /* Center content */
+    padding: 0px;  /* Add padding on smaller screens */
+  }
+
+.information h2 {
+    font-size: 36px;
+    color: #1F2937;
+    text-align: center;
+    padding: 20px 0px 5px 0px;
+}
+
+.information p {
+    font-size: 18px;
+    color: #1F2937
+}
+
+/* Container for all the blue boxes */
+.info-cards-container {
+    display: flex;  /* Use flexbox to align the boxes in a row */
+    justify-content: space-between;  /* Distribute space evenly between the boxes */
+    gap: 20px;  /* Add 20px space between each box */
+    margin: 0px 100px; /* Adjusted padding: 20px top, 5px bottom */
+  }
+  
+  /* Styling for each individual info card */
+.info-card {
+    text-align: center;  /* Center the text and content */
+  }
+  
+  /* Blue box styling */
+  .box-content {
+    width: 150px;  /* Set width of the blue box */
+    height: 150px;  /* Set height of the blue box */
+    border: 2px solid #3882F6;  /* Blue border */
+    border-radius: 5px;  /* Rounded corners */
+    margin: 0 auto 10px;  /* Center box and add margin below */
+    background-color: white;  /* Set a light background color so it's visible */
+  }
+  
+  /* Text styling */
+  .info-card p {
+    font-size: 16px;  /* Set text size */
+    color: #848b94;  /* Set text color */
+    margin: 0;  /* Remove default margin */
+  }
 
 /* Testimonial Section */
 .testimonial {
